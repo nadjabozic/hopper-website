@@ -21,7 +21,7 @@ The site contains multiple HTML pages, a CSS stylesheet for design, a JavaScript
 
 ```
 hopper-website/
-├─ eh.html              # homepage
+├─ index.html              
 ├─ umetnost.html
 ├─ biografija.html
 ├─ odabranaDela.html
@@ -51,7 +51,7 @@ hopper-website/
    git clone https://github.com/nadjabozic/hopper-website.git
    ```
 
-2. Open `eh.html` in your web browser.
+2. Open `index.html` in your web browser.
 
 ## Deployment
 This project can be deployed using [GitHub Pages](https://pages.github.com/) for free hosting.
