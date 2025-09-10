@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Informacije</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	
+	<body onload="inicijalizujsesta()">
+		<div class="navigacija">
+			<h2>Navigacija</h2>
+			<a href="eh.html">Edvard Hoper</a> 
+			<a href="umetnost.html">Umetnost</a>  
+			<a href="biografija.html">Biografija</a> 
+			<a href="odabranaDela.html">Odabrana dela</a>
+			<a href="galerija.html">Galerija</a>
+			<a href="informacije.html">Informacije</a>
+		</div>
+		<br>
+		<div class="sadrzaj">
+			<form name="forma" onsubmit="return provera()">
+				<fieldset>
+					<legend>Lični podaci</legend> 
+					Ime:
+					<input id="ime" type="text" required> <br> <br>
+					Prezime:
+					<input id="prezime" type="text" required> <br> <br>
+					Datum rođenja: 
+					<input id="datum" type="date" required> <br> <br>
+					Pol: <br>
+					<input type="radio" name="pol" value="zenski" required checked>Ženski<br>
+					<input type="radio" name="pol" value="muski" required>Muški<br>
+				</fieldset> <br> <br>
+				<fieldset>
+					<legend>Mišljenje o stranici</legend> 
+					Ocenite koliko vam se svidela stranica:
+					<select id="selektovanje" required>
+						<option value="" selected disabled>Odaberite ocenu</option>
+						<option value="Veoma mi se sviđa stranica">Veoma mi se sviđa stranica</option>
+						<option value="Sviđa mi se stranica">Sviđa mi se stranica</option>
+						<option value="Nemam mišljenje">Nemam mišljenje</option>
+						<option value="Ne sviđa mi se stranica">Ne sviđa mi se stranica</option>
+					</select> <br> <br>
+					Na skali od 1 do 10 kolika je verovatnoća da nekome preporučite ovu stranicu?
+					<input id="preporuka" type="number" min="1" max="10" value="1" required>
+					<p>Ostavite komentar: <br> <br>
+					<textarea id="komentar" name="komentari" rows="8" cols="100">Tekst ide ovde: </textarea> </p> 
+				</fieldset> <br> <br>
+				<fieldset>
+					<legend>Sadržaj stranice</legend>
+					Omiljena Hoperova slika: 
+					<input id="favslika" type="text" required> <br>
+					
+					Koja boja Vam je najupečatljivija na Hoperovim slikama?
+					<input id="boja" type="color" name="boja" value="#259900" required> <br> <br>
+					
+					Koje su Vam omiljeni motivi Hoperovog rada? <br>
+					<input type="checkbox" id="tema1" name="tema1" value="americki zivot" checked>
+					<label for="tema1">Američki život</label><br>
+					<input type="checkbox" id="tema2" name="tema2" value="seoski pejzaz" checked>
+					<label for="tema2">Seoski pejzaž</label><br>
+					<input type="checkbox" id="tema3" name="tema3" value="gradski pejzaz" checked>
+					<label for="tema3">Gradski pejzaž</label><br>
+					<input type="checkbox" id="tema4" name="tema4" value="nauticke teme" checked>
+					<label for="tema4">Nautičke teme</label><br>
+					<input type="checkbox" id="tema5" name="tema5" value="prozori" checked>
+					<label for="tema5">Prozori</label><br>
+					<input type="checkbox" id="tema6" name="tema6" value="sunceva svetlost" checked>
+					<label for="tema6">Sunčeva svetlost</label><br>
+					<input type="checkbox" id="tema7" name="tema7" value="usamljene figure" checked>
+					<label for="tema7">Usamljene figure</label><br>
+					<input type="checkbox" id="tema8" name="tema8" value="parovi" checked>
+					<label for="tema8">Parovi</label> <br>
+					
+					Koliko je po Vašem mišljenju bio uticajan Hoper?
+					<input id="uticajnost" type="range" min="1" max="10" value="5" required  >					
+				</fieldset> <br>
+				<input id="posalji" type="submit" value="Pošalji"> 
+				<input id="resetuj" type="reset" value="Resetuj">
+			</form>
+			<span id="mejl">
+				<p>Za pitanja o sajtu pošaljite mejl <a href="mailto:nadjabozic555@gmail.com">ovde</a></p>
+			</span>
+		</div>
+		<a id="pocetak" href="#top">Povratak na vrh stranice</a>
+		
+	</body>
+	
+</html>

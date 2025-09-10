@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Edvard Hoper</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<style>
+			.noviBorder {
+				border: solid 2px blue;
+			}
+			.ukloni {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	
+	<body onload="inicijalizujprva()">
+		<div class="navigacija">
+			<h2>Navigacija</h2>
+			<a href="eh.html">Edvard Hoper</a> 
+			<a href="umetnost.html">Umetnost</a>  
+			<a href="biografija.html">Biografija</a> 
+			<a href="odabranaDela.html">Odabrana dela</a>
+			<a href="galerija.html">Galerija</a>
+			<a href="informacije.html">Informacije</a>
+		</div>
+		<div class="sadrzaj">
+			<h1 style="color:rgb(204,0,0);text-align:center;border:5px groove rgb(51,51,153); background-color:rgba(51,51,153,0.3)">EDVARD HOPER</h1>
+			<div class="uvod">
+				<img id="prvaSlika" onmouseover="menjajSliku(this)" onmouseout="vratiSliku(this)" src="images/hopper_4.jpeg" alt="Edvard Hoper">
+				<p><strong>Edvard Hoper</strong> je američki slikar realizma. Iako je široko poznat po svojim slikama slikanim uljanim bojama, bio je jednako vešt kao akriličar i bakrorezac. Njegova karijera je imala odlučujuću korist od braka sa umetnicom Žozefin Nivison, koja je mnogo doprinela njegovom radu, ujedno kao model i kao kreativni partner. Hoper je bio sporedni umetnik, stvarajući prigušenu dramu od uobičajenih tema koje imaju mnogo slojeva poetskog značenja, pozivajući narativne interpretacije, često nenamerno. Pohvaljen je zbog 'potpuno istinite' Amerike koju je tumačio.</p>
+
+				<h2>Uticaj</h2>
+				<p>Hoperov uticaj na svet umetnosti i pop kulturu je neporecnljiv. Iako nije imao formalne studente, mnogi umetnici su ga naveli kao uticaj, uključujući <ins>Vilema de Kuninga</ins>, <ins>Džima Dajna</ins> i <ins>Marka Rotka</ins>. Ilustracija Hoperovog uticaja je Rotkovo rano delo <i>"Kompozicija I"</i> (oko 1931), koje je direktna parafraza Hoperove slike <i>"Chop Suey"</i>. Hoperove filmske kompozicije i dramatična upotreba svetla i tame učinili su ga omiljenim među filmskim režiserima.  Film <i>"Pennies from Heaven"</i> iz 1981. uključuje prizor <i>"Nighthawks"</i>, sa glavnim glumcima u restoranima. Poznati reditelj nadrealističkih horor filmova <b>Dario Argento</b> otišao je toliko daleko da je rekreirao restoran i goste u Nighthawks-u kao deo seta za svoj film <i>"Deep Red"</i> iz 1976. godine. <b>Ridli Skot</b> je citirao istu sliku kao vizuelnu inspiraciju za <i>"Blade Runner"</i>. Da bi uspostavio osvetljenje scena u filmu <i>"Put u propast"</i> iz 2002. godine, reditelj Sem Mendes je crpio iz Hoperovih slika kao izvora inspiracije, posebno iz slike <i>"Njujorški film"</i>. Muzički uticaji su takođe mnogobrojni. Godine 1993, <b>Madona</b> je bila toliko inspirisana Hoperovom slikom <i>"Girlie Show"</i> iz 1941. da je po njoj nazvala svoju svetsku turneju i uključila mnoge pozorišne elemente i atmosferu slike u predstavu. Godine 2004. britanski gitarista <b>Džon Skvajer</b> (iz grupe The Stone Roses) objavio je konceptualni album zasnovan na Hoperovom delu pod nazivom <i>"Marshall's House"</i>. Svaka pesma na albumu je inspirisana Hoperovom slikom i deli njen naslov. U poeziji, brojne pesme su inspirisane Hoperovim slikama, obično kao živopisni opisi i dramatizacije; ovaj žanr je poznat kao <ins>ekfraza</ins>. Pored brojnih pojedinačnih pesama inspirisanih Hoperom, nekoliko pesnika je napisalo zbirke zasnovane na Hoperovim slikama.</p>	
+			</div>
+			<img id="uticaj" ondblclick="smanji(this)" onmousewheel="uvecaj(this)" src="images/pop_culture.jpg" width="100%">
+			<h3>Citati:</h3>
+			<div id="citati">
+				<ul id="lCitati" onclick="citatidodaj()">
+					<li>"Verujem da su veliki slikari sa svojim intelektom majstora pokušali da nateraju ovaj nevoljni medij boje i platna u zapis svojih emocija."</li>
+					<li>"U radu nikad ne mislim da je uzmenirujuće upadanje elemanata deo moje vizije i neizbežno je brisanje i zamena ove vizije samim radom dok se odvija."</li>
+					<li>"Na kraju krajeva, mi nismo Francuzi i to nikada ne možemo biti, a svaki pokušaj da to budemo je da negiramo svoje nasleđe i da pokušamo da sebi nametnemo karakter koji ne može biti ništa drugo do furnir na površini."</li>
+					<li>"Dobra umetnost je spoljašnji izraz unutrašnjeg života umetnika, a taj unutrašnji život će rezultirati njegovom ličnom vizijom sveta."</li>
+					<li>"Postoji neka vrsta ushićenja zbog sunčeve svetlosti na gornjem delu kuće."</li>
+					<li>"Mislim da će postojati pokušaj da se ponovo shvate iznenađenja i slučajnosti prirode i intimnjije i saosećajnije proučavanje njenih raspoloženja, zajedno sa obnovljenim čudom i poniznošću onih koji su još uvek sposobni za ove osnovne reakcije."</li>
+					<li>"Jedini pravi uticaj koji sam imao sam ja."</li>
+					<li>"Ako su tehničke inovacije impresionista dovele samo do tačnijeg predstavljanja prirode, to možda nije imalo veliku vrednost u povećanju njihove moći izražavanja."</li>
+					<li>"Više mene izlazi kada improvizujem."</li>
+					<li>"Nijedna količina vešte kreacije ne može zameniti suštinski element mašte."</li>
+				</ul>
+				<button onclick="citatiskloni()">Klikni da nestanu citati</button>
+			</div>
+			<h3>Uzori i učitelji:</h3>
+			<div id="uzori">
+				<div id="uzoriSlike">
+					<img src="images/Ralph_Waldo_Emerson.jpg" alt="Ralf Valdo Emerson">
+					<img src="images/800px-William_Merritt_Chase.jpg" alt="Vilijam Merit Čejs">
+					<img src="images/Édouard_Manet.jpg" alt="Eduar Mane">
+					<img src="images/Edgar_Degas_self_portrait_1855.jpeg" alt="Edgar Dega">
+					<img src="images/800px-Robert_Henri_1897.jpg" alt="Robert Anri">
+					<img src="images/Rembrandt_van_Rijn.jpg" alt="Rembrant">
+					<img src="images/Félix_Bracquemond,_Charles_Meryon,_1853.jpg" alt="Čarls Merion"> 
+					<img src="images/cb.jpg" alt="Čarls Berčfild">
+				</div>
+				<ol type="I" id="lUzori">
+					<li>
+						<a onmouseenter="slikaBorder(0)" onmouseleave="slikaSkiniBorder(0)" href="https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson">Ralf Valdo Emerson</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(1)" onmouseleave="slikaSkiniBorder(1)" href="https://en.wikipedia.org/wiki/William_Merritt_Chase">Vilijam Merit Čejs</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(2)" onmouseleave="slikaSkiniBorder(2)" href="https://en.wikipedia.org/wiki/%C3%89douard_Manet">Eduar Mane</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(3)" onmouseleave="slikaSkiniBorder(3)" href="https://en.wikipedia.org/wiki/Edgar_Degas">Edgar Dega</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(4)" onmouseleave="slikaSkiniBorder(4)" href="https://en.wikipedia.org/wiki/Robert_Henri">Robert Anri</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(5)" onmouseleave="slikaSkiniBorder(5)" href="https://en.wikipedia.org/wiki/Rembrandt">Rembrant</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(6)" onmouseleave="slikaSkiniBorder(6)" href="https://en.wikipedia.org/wiki/Charles_Meryon">Čarls Merion</a>
+					</li>
+					<li>
+						<a onmouseenter="slikaBorder(7)" onmouseleave="slikaSkiniBorder(7)" href="https://en.wikipedia.org/wiki/Charles_E._Burchfield">Čarls Berčfild</a>
+					</li>
+				</ol>
+			</div>
+			<h3>Izložbe:</h3>
+			<dl id="izlozbe">
+				<dt>1980.</dt>
+				<dd>"Edvard Hoper: Umetnost i Umetnik" se otvorio u Vitni muzeju američke umetnosti je posetio London, Dizeldorf, Amsterdam, San Francisko i Čikago. Prvi put ikada, ova izložba je predstavila Hoperove slike naslikane uljanim bojama zajedno sa pripremnim studijama ovih dela. Ovo je bio početak Hoperove popularnosti u Evropi i velike reputacije širom sveta.</dd>
+				<dt>2004.</dt>
+				<dd>Velika selekcija Hoperovih slika je obišla Evropu, posećujući muzej Ludvig u Kelnu u Nemačkoj i Tejt Modern u Londonu. Tejt izložba je postala druga najpopularnija i istoriji galerije, sa 420,000 posetilaca u tri meseca koliko je bila otvorena.</dd>
+				<dt>2007.</dt>
+				<dd>Ova izložba je bila fokusirana na period Hoperovih najvećih dostignuća - od 1925 do sredine veka - i predstavljena je u Muzeju lepih umetnosti u Bostonu. Izložba je sadržala 50 slika naslikanih uljanih bojama, 30 slika naslikanih vodenim bojama i 12 otisaka.</dd>
+				<dt>2010.</dt>
+				<dd>Muzej Fondacija Ermitaž u Lozani u Švajcarskoj je držao izložbu koja je pokrila Hoperovu čitavu karijeru. Uključila je slike slikane uljanim i vodenim bojama, bakropise, stripove, postere, kao i pripremne studije za odabrane slike. Izložba je prethodno viđena u Milanu i Rimu.</dd>
+				<dt>2011.</dt>
+				<dd>Vitni muzej američke umetnosti je održao izložbu pod imenom "Edvard Hoper i njegova vremena".</dd>
+				<dt>2012.</dt>
+				<dd>U 2012. izložba se otvorila u Velikoj palati u Parizu koja je nastojala da rasvetli kompleksnost njegovih remek-dela, što je pokazatelj bogatstva Hoperovog opusa. Bila je hronološki podeljena na dva dela: prvi je obuhvatao Hoperove formativne godine (1900-1924), upoređujući njegov rad sa radovima njegovih savremenika i umetnosti koju je video u Parizu, koja je možda imala uticaj na njega. Drugi deo se bavio umetnosti njegovih zrelih godina, od prvih amblematičnih slika njegovog ličnog stila, do njegovih poslednjih radova.</dd>					
+				<dt>2020.</dt>
+				<dd>Fondacija Bejler je održala izložbu prikazujući Hoperove slike. Izložba se usredsredila na Hoperovu "ikoničnu reprezentaciju beskonačnog prostranstva američkih prirodnih i gradskih pejzaža". Ovaj aspekt se retko pominje na izložbama, ali je ključni sastojak za razumevanje Hoperovog rada.</dd>
+			</dl>
+		</div>
+		<a id="pocetak" href="#top">Povratak na vrh stranice</a>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+	
+</html>
